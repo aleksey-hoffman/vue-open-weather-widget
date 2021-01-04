@@ -1,15 +1,29 @@
 {
   "name": "vue-open-weather-widget",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "dist/vue-open-weather-widget.common.js",
+  "private": false,
+  "license": "MIT",
+  "author": "Aleksey Hoffman",
+  "homepage": "https://github.com/aleksey-hoffman/vue-open-weather-widget",
+  "description": "A minimalistic weather component for Vue",
+  "keywords": [
+    "weather",
+    "widget",
+    "component",
+    "vue"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-open-weather-widget src/main.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mdi/font": "^5.8.55",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "countries-list": "^2.5.6",
+    "vue": "^2.6.11",
+    "vue-smooth-dnd": "^0.8.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
