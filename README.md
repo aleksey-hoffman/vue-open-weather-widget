@@ -29,23 +29,41 @@ yarn add vue-open-weather-widget
 
 ## Import
 
+#### Method #1 | locally:
+#### `SomeComponent.vue`
+
 ```js
+<script>
 import OpenWeatherWidget from 'vueOpenWeatherWidget'
 import 'vue-open-weather-widget/dist/vue-open-weather-widget.css'
 
-export {
+export default {
   components: {
     OpenWeatherWidget
   }
+  ...
 }
+</script>
+```
+
+#### Method #2 | globally:
+
+#### `main.js`
+```js
+import OpenWeatherWidget from 'vue-open-weather-widget'
+import 'vue-open-weather-widget/dist/vue-open-weather-widget.css'
+
+Vue.component('open-weather-widget', OpenWeatherWidget)
 ```
 
 ## Use
 
 ```html
-<div class="weather-widget-container">
-  <open-weather-widget :api-key="weatherApiKey"/>
-</div>
+<template>
+  <div class="weather-widget-container">
+    <open-weather-widget :api-key="weatherApiKey"/>
+  </div>
+</template>
 ```
 
 ## Style
