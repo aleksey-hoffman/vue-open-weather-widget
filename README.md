@@ -32,7 +32,7 @@ yarn add vue-open-weather-widget
 #### Method #1 | locally:
 #### `SomeComponent.vue`
 
-```js
+```html
 <script>
 import OpenWeatherWidget from 'vueOpenWeatherWidget'
 import 'vue-open-weather-widget/dist/vue-open-weather-widget.css'
