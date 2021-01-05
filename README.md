@@ -1,6 +1,5 @@
 # vue-open-weather-widget
 
-## About
 
 A minimalistic weather component for Vue. Weather data is taken from the [openweather](https://openweathermap.org/current) API.
 
@@ -9,7 +8,6 @@ A minimalistic weather component for Vue. Weather data is taken from the [openwe
 ## Demo
 
 You can see the widget in action on this page:
-
 https://vue-open-weather-widget.web.app/
 
 ## Get weather API key
@@ -33,9 +31,7 @@ yarn add vue-open-weather-widget
 
 ```js
 import OpenWeatherWidget from 'vueOpenWeatherWidget'
-import 'vue-open-weather-widget/node_modules/@mdi/font/css/materialdesignicons.css'
-import 'vue-open-weather-widget/src/icons/weather-icons-master/css/weather-icons.css'
-import 'vue-open-weather-widget/src/icons/weather-icons-master/css/weather-icons-wind.css'
+import 'vue-open-weather-widget/dist/vue-open-weather-widget.css'
 
 export {
   components: {
@@ -54,7 +50,7 @@ export {
 
 ## Style
 
-You can style the component with CSS. For example:
+You can style the component with CSS. Just make sure your styles have higher specificity than the component's styles. The easiest way to do this is to add `#app` in the selectors. For example:
 
 ```SCSS
 <style lang="scss">
@@ -72,7 +68,7 @@ You can style the component with CSS. For example:
     12px 12px 32px rgba(0, 0, 0, 0.1);
 }
 
-.open-weather-widget {
+#app .open-weather-widget {
   border-radius: 12px;
   background-color: var(--bg-color-1);
   &__input-element {
@@ -94,7 +90,7 @@ You can style the component with CSS. For example:
   }
 }
 
-#open-weather-widget {
+#app #open-weather-widget {
   &__loading-screen {
     background-color: var(--bg-color-1);
   }

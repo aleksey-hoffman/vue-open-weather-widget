@@ -241,7 +241,7 @@ export default {
     },
     formattedWeatherInfoWeatherDescription () {
       try {
-        const desc = this.state.weatherData.weather.[0].description
+        const desc = this.state.weatherData.weather[0].description
         return desc.replace(/^\p{CWU}/u, char => char.toLocaleUpperCase('en'))
       }
       catch (error) {

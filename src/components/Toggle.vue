@@ -8,13 +8,6 @@
     >
       <span class="open-weather-widget__toggle__button"></span>
       <span class="open-weather-widget__toggle__label">{{label}}</span>
-    <!-- <label for="open-weather-widget__toggle__checkbox">
-      <div class="open-weather-widget__toggle__button">
-        <div class="open-weather-widget__toggle__label">
-          {{label}}
-        </div>
-      </div>
-    </label> -->
   </label>
 </template>
 
