@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .open-weather-widget__toggle__container {
   --voww-switch-container-width: 36px;
   --voww-switch-size: calc(var(--voww-switch-container-width) / 2);
