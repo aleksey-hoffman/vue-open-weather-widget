@@ -16,6 +16,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-open-weather-widget src/main.js",
+    "npm:publish": "yarn build && npm publish",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
