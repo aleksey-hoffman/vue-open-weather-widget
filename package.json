@@ -1,6 +1,6 @@
 {
   "name": "vue-open-weather-widget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/vue-open-weather-widget.common.js",
   "private": false,
   "license": "MIT",
