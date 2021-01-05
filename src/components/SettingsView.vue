@@ -323,7 +323,7 @@ export default {
 
 .open-weather-widget {
   &__location-suggestions-list[has-items] {
-    border: 1px solid var(--divider-color-1);
+    border: 1px solid var(--voww-divider-color-1);
     padding: 8px;
   }
   &__location-suggestions-list {
@@ -342,7 +342,7 @@ export default {
       }
     }
     &__item[is-selected] {
-      background-color: rgba(var(--accent-color-value), 0.7);
+      background-color: rgba(var(--voww-accent-color-value), 0.7);
       color: #fff
     }
   }
@@ -351,16 +351,16 @@ export default {
     font-size: 16px;
     padding: 12px 10px 8px 10px;
     border-radius: 4px;
-    border: 1px solid var(--divider-color-1);
+    border: 1px solid var(--voww-divider-color-1);
     background-color: transparent;
     color: rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
     &:focus {
-      border-bottom: 2px solid rgba(var(--accent-color-value), 0.8);
+      border-bottom: 2px solid rgba(var(--voww-accent-color-value), 0.8);
       outline: none;
-      color: rgba(var(--accent-color-value), 0.8);
+      color: rgba(var(--voww-accent-color-value), 0.8);
       &::placeholder {
-        color: rgba(var(--accent-color-value), 0.8);
+        color: rgba(var(--voww-accent-color-value), 0.8);
       }
     }
     &::placeholder {

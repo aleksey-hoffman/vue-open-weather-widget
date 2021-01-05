@@ -507,14 +507,14 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 :root {
-  --bg-color-1: #fff;
-  --accent-color-value: 112, 130, 245;
-  --divider-color-1: rgba(0, 0, 0, 0.1);
-  --disabled-color-1: rgba(0, 0, 0, 0.3);
+  --voww-bg-color-1: #fff;
+  --voww-accent-color-value: 112, 130, 245;
+  --voww-divider-color-1: rgba(0, 0, 0, 0.1);
+  --voww-disabled-color-1: rgba(0, 0, 0, 0.3);
 }
 
 hr {
-  border-top-color: var(--divider-color-1);
+  border-top-color: var(--voww-divider-color-1);
   max-width: 200px;
   margin: 16px auto;
 }
@@ -583,7 +583,7 @@ hr {
       }
       i[is-disabled] {
         cursor: default;
-        color: var(--disabled-color-1)
+        color: var(--voww-disabled-color-1)
       }
     }
     &__title {
@@ -598,14 +598,14 @@ hr {
       width: 100%;
       cursor: pointer;
       user-select: none;
-      border-bottom: 1px solid var(--divider-color-1);
+      border-bottom: 1px solid var(--voww-divider-color-1);
       padding: 8px;
-      background-color: var(--bg-color-1);
+      background-color: var(--voww-bg-color-1);
       &:hover {
         background-color: rgba(0, 0, 0, 0.02);
       }
       & [is-active] {
-        color: rgba(var(--accent-color-value), 1);
+        color: rgba(var(--voww-accent-color-value), 1);
       }
     }
   }
@@ -623,7 +623,7 @@ hr {
   z-index: 10;
   user-select: none;
   pointer-events: none;
-  background-color: var(--bg-color-1);
+  background-color: var(--voww-bg-color-1);
   opacity: 1;
 }
 

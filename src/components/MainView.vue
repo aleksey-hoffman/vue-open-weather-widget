@@ -208,7 +208,7 @@ export default {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: var(--bg-color-1);
+      background-color: var(--voww-bg-color-1);
       &__title {
         font-size: 36px;
         margin-bottom: 8px;

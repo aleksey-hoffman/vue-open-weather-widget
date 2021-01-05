@@ -22,8 +22,8 @@ export default {
 
 <style lang="scss">
 .open-weather-widget__toggle__container {
-  --switch-container-width: 36px;
-  --switch-size: calc(var(--switch-container-width) / 2);
+  --voww-switch-container-width: 36px;
+  --voww-switch-size: calc(var(--voww-switch-container-width) / 2);
 }
 
 .open-weather-widget {
@@ -32,11 +32,11 @@ export default {
       width: 0px;
       height: 0px;
       &:checked + .open-weather-widget__toggle__button {
-        background-color: rgba(var(--accent-color-value), 1);
+        background-color: rgba(var(--voww-accent-color-value), 1);
       }
       &:checked + .open-weather-widget__toggle__button::before {
         transform: translateX(
-          calc(var(--switch-container-width) - var(--switch-size))
+          calc(var(--voww-switch-container-width) - var(--voww-switch-size))
         );
       }
     }
@@ -49,17 +49,17 @@ export default {
       position: relative;
       display: flex;
       align-items: center;
-      height: var(--switch-size);
-      flex-basis: var(--switch-container-width);
-      border-radius: var(--switch-size);
+      height: var(--voww-switch-size);
+      flex-basis: var(--voww-switch-container-width);
+      border-radius: var(--voww-switch-size);
       background-color: #dee4ec;
       transition: all 0.2s ease;
       &::before {
         content: "";
         position: absolute;
         left: 2px;
-        height: calc(var(--switch-size) - 4px);
-        width: calc(var(--switch-size) - 4px);
+        height: calc(var(--voww-switch-size) - 4px);
+        width: calc(var(--voww-switch-size) - 4px);
         border-radius: 100%;
         background-color: #fff;
         transition: all 0.2s ease;
